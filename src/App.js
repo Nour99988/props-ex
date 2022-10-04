@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FatherCom from "./components/FatherCom";
 
 function App() {
+  const data = [
+    {
+      id: 1,
+      userName: "Mohammed",
+    },
+    {
+      id: 2,
+      userName: "Mohammed",
+    },
+    {
+      id: 3,
+      userName: "Mohammed",
+    },
+    {
+      id: 4,
+      userName: "Mohammed",
+    },
+    {
+      id: 5,
+      userName: "Mohammed",
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FatherCom length={data.length} />
     </div>
   );
 }
